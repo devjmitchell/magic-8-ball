@@ -35,7 +35,9 @@ answer = {
     24: "\n*** Why are you asking me? I just give you random replies back! ***",
     25: "\n*** Shake and ask again... Don't actually shake, this is a computer! ***",
     26: "\n*** Just Google it! ***",
-    27: "\n*** I dunno ***"
+    27: "\n*** I dunno ***",
+    28: "\n*** Just get lost! ***",
+    29: "\n*** Please stop asking questions, you've asked enough! ***"
 }
 
 # The game
@@ -49,7 +51,7 @@ while keep_playing:
         question = input("Ask a question: ")
 
     # Get a random number that will be used for the magic answer
-    random_number = randint(1,27)
+    random_number = randint(1,29)
 
     # Call dictionary value to give magic answer
     print (answer[random_number])
